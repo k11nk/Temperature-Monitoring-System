@@ -1,0 +1,42 @@
+Temperature Monitoring System
+
+Components Required:
+
+1. Arduino Board:
+   - Arduino Nano.
+
+2. Temperature Sensor:
+   - LM35 Temperature Sensor: This sensor outputs a voltage that is proportional to the temperature in degrees Celsius.
+
+3. Liquid Crystal Display (LCD):
+   - 16x2 LCD: A common LCD used for displaying text. Make sure it has an appropriate interface (HD44780 compatible).
+
+4. LED:
+   - Standard LED: Used to indicate when the temperature exceeds the set threshold.
+
+5. Resistor:
+   - 220Ω Resistor: For limiting the current through the LED to prevent damage.
+
+6. Breadboard and Jumper Wires:
+   - Breadboard: For making connections without soldering.
+   - Jumper Wires: To connect the components on the breadboard.
+
+7. Power Supply:
+   - USB Cable: To power the Arduino from a computer or a suitable external power supply (like a battery or adapter).
+
+Summary of Connections:
+
+- LM35 Sensor:
+  - Connect VCC (pin 1) to 5V on Arduino.
+  - Connect GND (pin 3) to GND on Arduino.
+  - Connect the output (pin 2) to the analog pin A0.
+
+- LCD:
+  - Connect RS to pin 12 on Arduino.
+  - Connect EN to pin 11 on Arduino.
+  - Connect D4 to pin 5, D5 to pin 4, D6 to pin 3, and D7 to pin 2 on Arduino.
+  - Connect VSS to GND, VDD to 5V, and V0 to GND (or potentiometer for contrast adjustment).
+
+- LED:
+  - Connect the anode (longer leg) to pin 13 on Arduino and the cathode (shorter leg) to one end of the resistor. Connect the other end of the resistor to GND.
+
